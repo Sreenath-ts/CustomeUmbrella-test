@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:lightblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#umbrella-area{
+    width: 60%;
+    height: 100%;
+    padding-top: 13%;
+}
+
+#custom-area{
+    padding-top: 9%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#umbrella-img{
+    width: 42%;
+    height: 35%;
+}
+
+#umbrellas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000000;
+  }
+  
+  #content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .circles{
+    display: flex;
+    margin-left: 2rem;
+  }
+  .circle {
+    margin: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+
+  #bottom{
+    margin-top: 3rem;
+    line-height: 1.5rem;
+  }
+
+  #upload-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: blue;
+    width: 16rem;
+    height: 3.1rem;
+    margin-top: 1.3rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+    position: relative;
+  }
+
+
+
+  #upload-btn {
+    width: 16rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #cancel{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 6rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+.visible{
+    display: block;
+}
+
+.fade-in {
+    opacity: 1;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+
+  #umbrella-img{
+    transition: opacity 0.5s;
+  }
+
+  #loader{
+    width: 32%;
+    height: 25%;
+    display: none;
+    position: absolute;
+    top: 42.7%;
+    left: 27.3%;
+    z-index: 2;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0); }
+    80% { transform: rotate(360deg); }
+    100% { transform: rotate(405deg); }
+  }
+  
+  .spin {
+    animation: spin 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  #logo {
+    position: absolute;
+    top: 60%;
+    display: none;
+  }
+  
+  .error {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .error i {
+    margin-right: 5px;
+  }
+  
+  .error p {
+    margin: 0;
+  }
+  
